@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+        .nav-tab {
+            justify-content: right;
+            display: inline-flex;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        .nav-tab a {
+            color: white;
+            margin-right: clamp(5px, 2vw - 5px, 25px);
+            font-size: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            padding: 10px 12px;
+            border-radius: 10px;
+        }
+        .nav-tab a:hover:not(.active) {
+            background-color: #555;
+        }
+        .nav-tab a.active {
+            background-color: #DCDCDC;
+            color: #333;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 15px auto;
+            background-color: #DCDCDC;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        .mission-title {
+            font-weight: bold;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .mission-statement {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 10px;
+            margin-left: auto;
+        }
+
+        .main-container img {
+            margin: 20px 0;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            object-fit: contain;
+            display: block;
+        }
+        .statistics {
+            font-size: 18px;
+            text-align: left;
+            list-style-type: circle;
+        }
+        .statistics li {
+            margin-bottom: 10px;
+        }
+        .sources {
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .sources a {
+            color: #0000EE;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .sources a:visited {
+            color: #551A8B;
+        }
+        .sources a:hover {
+            color: #FF0000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-tab" style="margin-left: clamp(5px, 2vw - 5px, 25px)">
+            <a style="font-size: 26px; padding: 6px 12px; text-decoration: underline; text-decoration-color: red; font-weight: bold" href="index.html">Prevent Online Predators</a>
+        </div>
+        <div class="nav-tab" style="margin-left: auto;">
+            <a class="active" href="index.html">Home</a>
+            <a href="cases.html">Cases</a>
+            <a href="resources.html">Resources</a>
+        </div>
+    </div>
+    <main>
+        <h1 style="text-align: center; font-size: 48px;">Prevent Online Predators: Keeping Children Safe</h1>
+        <div class="main-container">
+            <div class="mission-title">Our Mission</div>
+            <div class="mission-statement">
+                We are dedicated to protecting children from the dangers of online predators. 
+                Our mission is to raise awareness, provide resources, and empower parents, 
+                educators, and communities to keep children safe online.
+            </div>
+            <img src="Home Image.jpg" alt="Image related to online safety">
+        </div>
+        <div class="main-container">
+            <div class="mission-title">Important Statistics</div>
+            <div class="statistics">
+                <ul>
+                    <li>In 2023, the CyberTipline received 36,210,368 reports of suspected child sexual exploitation.</li>
+                    <li>Over 500,000 predators are active online every day.</li>
+                    <li>1 in 8 children has met someone face-to-face after first getting to know them online</li>
+                    <li>70% of children aged 14 to 17 have seen sexual images online.</li>
+                    <li>1 in 5 children aged 10 to 17 has been solicited sexually online.</li>
+                    <li>In 50% to 70% of of online child sexual abuse cases, the abuser is someone who is known to the child.</li>
+                    <li>Some 80% of children in 25 countries report feeling in danger of sexual abuse or exploitation online.</li>
+                    <li>Online grooming crimes have risen 82% in the last 5 years.</li>
+                    <li>73% of online grooming crimes involved Snapchat and Meta.</li>
+                    <li>Where the gender was known, 83% of online grooming offences were against girls.</li>
+                </ul>                
+                <div class="sources">
+                    Sources: <br>
+                    - NCMEC: <a href="https://www.missingkids.org/cybertiplinedata" target="_blank">CyberTipline Report</a> <br>
+                    - Bravehearts: <a href="https://bravehearts.org.au/about-child-sexual-abuse/online-child-expoitation" target="_blank">Online Child Exploitation</a> <br>
+                    - The University of New Hampshire: <a href="https://www.unh.edu/ccrc/sites/default/files/media/2024-02/finkelhor-ocsa-csa-24.pdf" target="_blank">The Prevalence of Child Sexual Abuse</a> <br>
+                    - UNICEF: <a href="https://www.unicef.org/protection/violence-against-children-online" target="_blank">Violence Against Children Online</a> <br>
+                    - eSafety Commissioner: <a href="https://www.esafety.gov.au/key-topics/illegal-restricted-content/child-sexual-abuse-online" target="_blank">Child Sexual Abuse Online</a> <br>
+                    - NSPCC: <a href="https://www.nspcc.org.uk/about-us/news-opinion/2023/2023-08-14-82-rise-in-online-grooming-crimes-against-children-in-the-last-5-years/" target="_blank">NSPCC Online Grooming Report</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

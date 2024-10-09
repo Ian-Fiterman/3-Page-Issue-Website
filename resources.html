@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+        .nav-tab {
+            justify-content: right;
+            display: inline-flex;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        .nav-tab a {
+            color: white;
+            margin-right: clamp(5px, 2vw - 5px, 25px);
+            font-size: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            padding: 10px 12px;
+            border-radius: 10px;
+        }
+        .nav-tab a:hover:not(.active) {
+            background-color: #555;
+        }
+        .nav-tab a.active {
+            background-color: #DCDCDC;
+            color: #333;
+        }
+        .resources-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .resource-box {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #DCDCDC;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .resource-title {
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .resource-list {
+            text-align: left;
+            margin-left: 40px;
+            font-size: 20px;
+            list-style-type: circle;
+        }
+        .resource-list ul li {
+            margin-bottom: 5px;
+        }
+        .resource-list ul li a {
+            color: #0000EE;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .resource-list ul li a:visited {
+            color: #551A8B;
+        }
+        .resource-list ul li a:hover {
+            color: #FF0000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-tab" style="margin-left: clamp(5px, 2vw - 5px, 25px)">
+            <a style="font-size: 26px; padding: 6px 12px; text-decoration: underline; text-decoration-color: red; font-weight: bold" href="index.html">Prevent Online Predators</a>
+        </div>
+        <div class="nav-tab" style="margin-left: auto">
+            <a href="index.html">Home</a>
+            <a href="cases.html">Cases</a>
+            <a class="active" href="resources.html">Resources</a>
+        </div>
+    </div>
+    <main>
+        <h1 style="text-align: center; font-size: 48px;">Helpful Resources:</h1>
+        <div class="resources-container">
+            <div class="resource-box" style="margin-top: 0">
+                <div class="resource-title">Online Safety for Kids</div>
+                <div class="resource-list">
+                    <ul>
+                        <li><a href="https://www.missingkids.org/netsmartz" target="_blank">NetSmartz: Internet Safety for Kids (NCMEC)</a></li>
+                        <li><a href="https://www.commonsensemedia.org/privacy-and-internet-safety" target="_blank">Common Sense Media: Privacy and Internet Safety</a></li>
+                        <li><a href="https://www.consumer.ftc.gov/topics/protecting-kids-online" target="_blank">FTC: Protecting Kids Online</a></li>
+                        <li><a href="https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/staying-safe-online" target="_blank">Childline: Staying Safe Online</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resource-box">
+                <div class="resource-title">Identifying Online Predators</div>
+                <div class="resource-list">
+                    <ul>
+                        <li><a href="https://rainn.org/news/5-red-flags-and-5-tips-protect-your-child-online" target="_blank">RAINN: 5 Red Flags and 5 Tips to Protect Your Child Online</a></li>
+                        <li><a href="https://fightthenewdrug.org/protect-your-child-from-online-predators" target="_blank">Fight The New Drug: Protect Your Kids From Online Predators</a></li>
+                        <li><a href="https://onlinesense.org/signs-online-predators" target="_blank">Online Sense: 20 Early Signs to Recognize Online Predators</a></li>
+                        <li><a href="https://www.bark.us/blog/5-signs-grooming/?srsltid=AfmBOoocMwM1iEeWn111kz7BvkrTR2c64-NAPJ6E4HFsxRyjjUe9yCAe" target="_blank">Bark: 5 Signs an Online Predator Could Be Grooming Your Kid</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resource-box">
+                <div class="resource-title">How to Report Online Abuse</div>
+                <div class="resource-list">
+                    <ul>
+                        <li><a href="https://www.cybertipline.com" target="_blank">CyberTipline: Reporting Suspicious Behavior</a></li>
+                        <li><a href="https://www.fbi.gov/how-we-can-help-you/parents-and-caregivers-protecting-your-kids">FBI: Protecting Your Kids</a></li>
+                        <li><a href="https://www.justice.gov/criminal-ceos/report-violations" target="_blank">US Department of Justice: Report Internet Exploitation</a></li>
+                        <li><a href="https://www.childnet.com/help-and-advice/online-sexual-harassment/reporting" target="_blank">Childnet: Reporting Online Sexual Harrassment</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="resource-box">
+                <div class="resource-title">Tools for Parents</div>
+                <div class="resource-list">
+                    <ul>
+                        <li><a href="https://www.qustodio.com" target="_blank">Qustodio: Parental Control Software</a></li>
+                        <li><a href="https://www.kaspersky.com/safe-kids" target="_blank">Kaspersky Safe Kids</a></li>
+                        <li><a href="https://www.bark.us" target="_blank">Bark: Monitor Texts, Email, and Social Media</a></li>
+                        <li><a href="https://support.apple.com/en-us/105121" target="_blank">Apple: Use parental controls on your child's iPhone and iPad</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+    </main>
+</body>
+</html>
