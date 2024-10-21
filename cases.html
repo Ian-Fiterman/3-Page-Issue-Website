@@ -4,111 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cases</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .nav-container {
-            display: flex;
-            align-items: center;
-            background-color: #333;
-            border: 5px solid #ccc;
-            border-radius: 5px;
-            margin: 10px auto;
-        }
-        .nav-tab {
-            justify-content: right;
-            display: inline-flex;
-            margin-top: 6px;
-            margin-bottom: 6px;
-        }
-        .nav-tab a {
-            color: white;
-            margin-right: clamp(5px, 2vw - 5px, 25px);
-            font-size: 20px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            padding: 10px 12px;
-            border-radius: 10px;
-        }
-        .nav-tab a:hover:not(.active) {
-            background-color: #555;
-        }
-        .nav-tab a.active {
-            background-color: #DCDCDC;
-            color: #333;
-        }
-        .cases-container {
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-        }
-        .case-box {
-            display: flex;
-            width: 30%;
-            max-width: 25vw;
-            margin-left: 10px;
-            margin-right: 10px;
-            background-color: #DCDCDC;
-            border: 5px solid #ccc;
-            border-radius: 5px;
-            padding: 20px;
-            flex-direction: column;
-        }
-
-        .case-box img {
-            display: block;
-            margin-inline: 20px;
-            border-radius: 5px;
-            object-fit: contain;
-        }
-        .case-box p {
-            font-size: 20px;
-            line-height: 24px;
-            margin-inline: 20px;
-        }
-        .case-title {
-            font-weight: bold;
-            font-size: 26px;
-            margin-bottom: 20px;
-        }
-        .button-container {
-            margin-top: auto;
-            display: flex;
-            justify-content: center;
-        }
-        .read-more-btn {
-            background-color: green;
-            color: white;
-            padding: 20px 40px;
-            text-decoration: none;
-            font-size: 22px;
-            border-radius: 10px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .read-more-btn:hover {
-            background-color: darkgreen;
-            transform: scale(1.1);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- PROF NOTE: All styles moved into CSS File -->
 </head>
 <body>
-    <div class="nav-container">
-        <div class="nav-tab" style="margin-left: clamp(5px, 2vw - 5px, 25px)">
-            <a style="font-size: 26px; padding: 6px 12px; text-decoration: underline; text-decoration-color: red; font-weight: bold" href="index.html">Prevent Online Predators</a>
+    <nav>
+        <div class="nav-tab" style="/* margin-left: clamp(5px, 2vw - 5px, 25px)*/">
+            <a href="index.html">Prevent Online Predators</a>
         </div>
-        <div class="nav-tab" style="margin-left: auto;">
+        <div class="nav-tab">
             <a href="index.html">Home</a>
             <a class="active" href="cases.html">Cases</a>
             <a href="resources.html">Resources</a>
         </div>
-    </div>
+    </nav>
     <main>
         <h1 style="text-align: center; font-size: 48px">Case Studies: Real Stories and Accounts of Online Grooming</h1>
         <div class="cases-container">
-            <div class="case-box">
+            <div class="case-box content-box">
                 <div class="case-title">Case 1: Amelia's Story</div>
                 <img src="Case 1 Image.jpeg" alt="Case 1 Image">
                 <p>9 year old gymnast Amelia was groomed by a predator posing as a child in a video game. Despite her mother's vigilance, she was manipulated into inappropriate conversations, resulting in clinical depression. Therapy has helped, but the trauma remains.</p>
@@ -116,7 +28,7 @@
                     <a href="https://childrescuecoalition.org/educations/amelias-story-groomed-on-a-video-game/" target="_blank" class="read-more-btn">Read More</a>
                 </div>
             </div>
-            <div class="case-box">
+            <div class="case-box content-box">
                 <div class="case-title">Case 2: Charlotte's Story</div>
                 <img src="Case 2 Image.jpeg" alt="Case 2 Image">
                 <p>Charlotte was only 14 when she was approached by a stranger on a social media platform, pretending to be a friend. What started as friendly chats soon turned into coercion and manipulation, leading Charlotte to make some dangerous decisions.</p>
@@ -124,7 +36,7 @@
                     <a href="https://www.childline.org.uk/get-involved/real-life-stories/online-grooming-charlottes-story/" target="_blank" class="read-more-btn">Read More</a>
                 </div>
             </div>
-            <div class="case-box">
+            <div class="case-box content-box">
                 <div class="case-title">Case 3: Alicia's Story</div>
                 <img src="Case 3 Image.jpeg" alt="Case 3 Image">
                 <p>Alicia, only 13 years old, was groomed and lured into meeting a man she thought she could trust. The ordeal led to her kidnapping, but she bravely shared her story to spread awareness about online safety.</p>
