@@ -1,3 +1,4 @@
+/* -- UNIVERSAL CLASSES & ELEMENTS -- */
 * {
     box-sizing: border-box;
 }
@@ -6,18 +7,103 @@ body {
     font-family: Arial, sans-serif;
     padding: 0px;
     margin: 0px;
+    background-color: #F0F8FF;
 }
+
+.content-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 25px;
+    background-color: #DCDCDC;
+    border: 5px solid #A9A9A9;
+    border-radius: 5px;
+    gap: 25px;
+}
+
+.content-box a {
+    color: #0000EE;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.content-box a:visited {
+    color: #551A8B;
+}
+
+.content-box a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.content-title {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.sources {
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    line-height: 18px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+    display: block;
+}
+
+p {
+    font-size: 20px;
+    color: #444444;
+    line-height: 28px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+ul {
+    margin: 0px;
+    font-size: 20px;
+    text-align: left;
+    list-style-type: circle;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #444444;
+}
+
+summary {
+    cursor: pointer;
+}
+
+/* -- NAVBAR SPECIFIC -- */
 
 nav {
     display: flex;
     align-items: center;
-    background-color: #333;
+    background-color: #333333;
     position: sticky;
     top: 0px;
     left: 0px;
     width: 100%;
     padding: 1em;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.75); /* PROF NOTE: Subtle drop-shadow to add some visual 'polish' in keeping with the tone of your project */
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
 }
 
 .nav-tab {
@@ -40,7 +126,7 @@ nav > .nav-tab:nth-of-type(1) a {
     padding: 6px 12px;
     text-decoration: underline;
     text-decoration-color: red;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .nav-tab a {
@@ -53,126 +139,12 @@ nav > .nav-tab:nth-of-type(1) a {
 }
 
 .nav-tab a:hover:not(.active) {
-    background-color: #555;
+    background-color: #555555;
 }
 
 .nav-tab a.active {
     background-color: #DCDCDC;
-    color: #333;
-}   
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.mission-title {
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.mission-statement {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 10px;
-    margin-left: auto;
-}
-
-.main-container img {
-    margin: 20px auto;
-    width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
-    display: block;
-}
-
-.statistics {
-    font-size: 18px;
-    text-align: left;
-    list-style-type: circle;
-}
-
-.statistics li {
-    margin-bottom: 10px;
-}
-
-.sources {
-    font-size: 14px;
-    font-style: italic;
-    margin-top: 10px;
-}
-
-/* -- UNIVERSAL -- */
-
-h1 {
-    text-align: center;
-    font-size: 48px;
-}
-
-.content-box {
-    background-color: #DCDCDC;
-    border: 5px solid #ccc;
-    border-radius: 5px;
-}
-
-.sources a,
-.resource-list a {
-    color: #0000EE;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.sources a:visited,
-.resource-list a:visited  {
-    color: #551A8B;
-}
-
-.sources a:hover,
-.resource-list a:hover  {
-    color: #FF0000;
-    text-decoration: underline;
-}
-
-
-/* -- RESOURCE PAGE SPECIFIC -- */
-
-.resources-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-}
-
-.resource-box {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    text-align: center;
-    padding: 20px;
-}
-
-.resource-title {
-    font-weight: bold;
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-ul.resource-list {
-    text-align: left;
-    margin-left: 40px;
-    font-size: 20px;
-    list-style-type: circle;
-}
-
-ul.resource-list li {
-    margin-bottom: 5px;
+    color: #333333;
 }
 
 /* -- CASES PAGE SPECIFIC -- */
@@ -181,34 +153,19 @@ ul.resource-list li {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .case-box {
+    gap: 25px;
     text-align: center;
     display: flex;
-    max-width: 25vw;
-    padding: 20px;
+    width: 25%;
+    padding: 25px;
     flex-direction: column;
-}
-
-.case-box img {
-    display: block;
-    margin-inline: 20px;
+    background-color: #DCDCDC;
+    border: 5px solid #A9A9A9;
     border-radius: 5px;
-    object-fit: contain;
-}
-
-.case-box p {
-    font-size: 20px;
-    line-height: 24px;
-    margin-inline: 20px;
-}
-
-.case-title {
-    font-weight: bold;
-    font-size: 26px;
-    margin-bottom: 20px;
 }
 
 .button-container {
@@ -220,7 +177,7 @@ ul.resource-list li {
 .read-more-btn {
     background-color: green;
     color: white;
-    padding: 20px 40px;
+    padding: 25px 40px;
     text-decoration: none;
     font-size: 22px;
     border-radius: 10px;
@@ -230,4 +187,15 @@ ul.resource-list li {
 .read-more-btn:hover {
     background-color: darkgreen;
     transform: scale(1.1);
+}
+
+/* -- RESOURCE PAGE SPECIFIC -- */
+
+.resource-description {
+    font-style: italic;
+    width: 60%;
+}
+
+.resource-list{
+    padding-top: 20px;
 }
