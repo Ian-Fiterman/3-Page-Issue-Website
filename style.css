@@ -107,7 +107,7 @@ nav {
     width: 100%;
     padding: 1em;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
-    z-index: 2;
+    z-index: +999 !important;
 }
 
 .nav-tab {
@@ -176,7 +176,6 @@ nav > .nav-tab:nth-of-type(1) a {
     margin-top: auto;
     display: flex;
     justify-content: center;
-    z-index: 1
 }
 
 .read-more-btn {
